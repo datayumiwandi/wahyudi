@@ -934,7 +934,7 @@ function safeCloseWebSocket(socket) {
 }
 
 async function checkProxyHealth(proxyIP, proxyPort) {
-  const req = await fetch(`${PROXY_HEALTH_CHECK_API}?ip=${proxyIP}:${proxyPort}`);
+  const req = await fetch(`${PROXY_HEALTH_CHECK_API}?ip=${proxyIP}&port=${proxyPort}`);
   return await req.json();
 }
 
