@@ -16,7 +16,10 @@ routes = [
   { pattern = "poliban.ac.id.aryati.my.id", custom_domain = true },
   { pattern = "ejurnal.poliban.ac.id.aryati.my.id", custom_domain = true },
   { pattern = "telkomsel.udemy.com.aryati.my.id", custom_domain = true },
-  { pattern = "telkomuniversity.ac.id.aryati.my.id", custom_domain = true }
+  { pattern = "telkomuniversity.ac.id.aryati.my.id", custom_domain = true },
+  { pattern = "untar.ac.id.aryati.my.id", custom_domain = true },
+  { pattern = "www.uii.ac.id.aryati.my.id", custom_domain = true },
+  { pattern = "ganecadigital.com.aryati.my.id", custom_domain = true }
  
 ]
 
