@@ -18,12 +18,12 @@ const APP_DOMAIN = `${serviceName}.${rootDomain}`;
 const PORTS = [443, 80];
 const PROTOCOLS = [reverse("najort"), reverse("sselv"), reverse("ss")];
 const KV_PROXY_URL = "https://raw.githubusercontent.com/FoolVPN-ID/Nautica/refs/heads/main/kvProxyList.json";
-const PROXY_BANK_URL = "https://raw.githubusercontent.com/FoolVPN-ID/Nautica/refs/heads/main/proxyList.txt";
+const PROXY_BANK_URL = "https://raw.githubusercontent.com/Mayumiwandi/Emilia/refs/heads/main/Data/alive.txt";
 const DNS_SERVER_ADDRESS = "8.8.8.8";
 const DNS_SERVER_PORT = 53;
-const PROXY_HEALTH_CHECK_API = "https://id1.foolvpn.me/api/v1/check";
+const PROXY_HEALTH_CHECK_API = "https://yumiproxy.vercel.app/api/v1";
 const CONVERTER_URL = "https://api.foolvpn.me/convert";
-const DONATE_LINK = "https://trakteer.id/dickymuliafiqri/tip";
+const DONATE_LINK = "https://trakteer.id/mayumiwandi/tip";
 const BAD_WORDS_LIST =
   "https://gist.githubusercontent.com/adierebel/a69396d79b787b84d89b45002cb37cd6/raw/6df5f8728b18699496ad588b3953931078ab9cf1/kata-kasar.txt";
 const PROXY_PER_PAGE = 24;
@@ -1080,7 +1080,9 @@ let baseHTML = `
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Proxy List</title>
+    <title>Wahyui - Proxy List</title>
+    <link rel="icon" type="image/x-icon"
+			href="https://github.com/user-attachments/assets/b5feabb7-3f20-4028-9436-e3f3307dd2ae">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
       /* For Webkit-based browsers (Chrome, Safari and Opera) */
@@ -1486,7 +1488,7 @@ let baseHTML = `
                   const jsonResp = await res.json();
                   if (jsonResp.proxyip === true) {
                     isActive = true;
-                    pingElement.textContent = "Active " + jsonResp.delay + " ms " + "(" + jsonResp.colo + ")";
+                    pingElement.textContent = "Active " + jsonResp.delay  + " "+"(" + jsonResp.colo + ")";
                     pingElement.classList.add("text-green-600");
                   } else {
                     pingElement.textContent = "Inactive";
